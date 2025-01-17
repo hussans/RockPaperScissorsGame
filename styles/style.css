@@ -52,7 +52,7 @@ body {
 
 /* Title --- */
 
-header {
+.mainmenu-header {
     position: fixed;
     top: 175px;
     left: 75px;
@@ -82,7 +82,7 @@ header {
 
 /* Play Button Section --- */
 
-section {
+.mainmenu-buttons {
     position: fixed;
     top: 450px;
     left: 75px;
@@ -254,13 +254,27 @@ section {
     display: block;
     margin: auto;
     width: 150px;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.500));
 }
 
 .update-spock {
     display: block;
     margin: auto;
     width: 100px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.500));
+}
+
+/* Image & Icon Section --- */
+
+.rightscreen-section {
+    position: fixed;
+    top: 150px;
+    left: 725px;
+    right: 0;
+}
+
+.rightscreen-image {
+    width: 700px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.500));
 }
 

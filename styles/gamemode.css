@@ -1,0 +1,42 @@
+/* Fonts --- ---- --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Header Section --- */
+
+.gamemode-header {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+}
+
+.gamemode-maintext {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.03rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* Button Section --- */
+
+.gamemode-buttons {
+    position: fixed;
+    top: 250px;
+    left: 0;
+    right: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
