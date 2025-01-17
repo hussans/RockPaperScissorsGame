@@ -8,6 +8,10 @@ body {
     background-color: #E6E6E6;
 }
 
+#mainmenu-screen {
+    display: block;
+}
+
 /* Navbar --- */
 
 .navbar {
@@ -48,6 +52,22 @@ body {
 
 .navbar-help:active {
     color: #ff0000 !important;
+}
+
+/* Rules Popup --- */
+
+#rulesPopUp {
+    display: none;
+}
+
+.rules-popup {
+    background-color: #606BC2;
+}
+
+.popup-title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /* Title --- */
@@ -126,6 +146,7 @@ body {
 .cpu-button:hover {
     background-color: #00A72A;
     color: white;
+    transition: 0.2s;
 }
 
 .cpu-button:active {
@@ -151,6 +172,7 @@ body {
 .pvp-button:hover {
     background-color: white;
     color: #00A72A;
+    transition: 0.2s;
 }
 
 .pvp-button:active {
@@ -268,13 +290,13 @@ body {
 
 .rightscreen-section {
     position: fixed;
-    top: 150px;
+    top: 175px;
     left: 725px;
     right: 0;
 }
 
 .rightscreen-image {
-    width: 700px;
+    width: 650px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.500));
 }
 

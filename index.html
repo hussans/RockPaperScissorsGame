@@ -1,66 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Rock Paper Scissors </title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/gamemode.css">
 </head>
-<body id="main-menu">
+
+<body>
+
+    <!-- Navbar -->
 
     <navbar>
         <div class="navbar">
             <p><a href="./index.html"> SANGAMES </a></p>
             <ul>
-                <li><a href=""> MAIN MENU </a></li>
-                <li><a class="navbar-help" href=""> HELP </a></li>
+                <li><a id="navbarMainMenu" href="./index.html"> MAIN MENU </a></li>
+                <li><a id="rulesBtn" class="navbar-help" href="#"> HELP </a></li>
             </ul>
         </div>
     </navbar>
 
-    <header class="mainmenu-header">
-        <h1 class="mainmenu-title"> Rock Paper Scissors 
-            <br><span class="title-lizard"> Lizard </span><span class="title-spock"> Spock </span>
-        </h1>
-        <p class="mainmenu-subtitle"> A CodeStack Academy Game </p>
-    </header>
-
-    <section class="mainmenu-buttons">
-        <div class="button-section">
-            <button class="cpu-button"> PLAY CPU <i><img src="./assets/arrowbtnicon.png" alt="arrow icon"></i></button>
-            <button class="pvp-button"> 1v1 </button>
-            <p class="button-divider"> | </p>
-            <button class="help-button"> CLICK FOR HELP </button>
-        </div>
-    </section>
-
-    <section class="gameupdates-section">
-        <p class="featuring-title"> Featuring new characters: </p>
-        <div class="gameupdates-grid">
-            <div class="gameupdates-lizard">
-                <img class="update-lizard" src="./assets/lizard-icon.png" alt="Green Lizard Image">
-            </div>
-            <div class="gameupdates-spock">
-                <img class="update-spock" src="./assets/spock.png" alt="Cartoon Spock Icon">
-            </div>
-            <div class="gameupdates-text">
-                <p> LIZARD <br> & <br> SPOCK </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="rightscreen-section">
-        <div>
-            <img class="rightscreen-image" src="./assets/rockpaperscissorsicon.png" alt="Rock Paper Scissor Icons with Arrows">
-        </div>
-    </section>
+    <!-- Help Popup -->
 
     <section>
-        <div>
+        <div id="rulesPopUp" class="rules-popup">
+            <div class="popup-titlebg">
+                <h1 class="popup-title"> Game Rules: </h1>
+            </div>
+            <p>
 
+            </p>
         </div>
     </section>
+
+    <!--- Main Menu Screen -->
+
+    <div id="mainmenu-screen">
+
+        <header class="mainmenu-header">
+            <h1 class="mainmenu-title"> Rock Paper Scissors
+                <br><span class="title-lizard"> Lizard </span><span class="title-spock"> Spock </span>
+            </h1>
+            <p class="mainmenu-subtitle"> A CodeStack Academy Game </p>
+        </header>
+
+        <section class="mainmenu-buttons">
+            <div class="button-section">
+                <button id="startGameBtn" class="cpu-button"> PLAY CPU <i><img src="./assets/arrowbtnicon.png" alt="arrow icon"></i></button>
+                <button id="1v1GameBtn" class="pvp-button"> 1v1 </button>
+                <p class="button-divider"> | </p>
+                <button id="rulesBtn2" class="help-button"> CLICK FOR HELP </button>
+            </div>
+        </section>
+
+        <section class="gameupdates-section">
+            <p class="featuring-title"> Featuring new characters: </p>
+            <div class="gameupdates-grid">
+                <div class="gameupdates-lizard">
+                    <img class="update-lizard" src="./assets/lizard-icon.png" alt="Green Lizard Image">
+                </div>
+                <div class="gameupdates-spock">
+                    <img class="update-spock" src="./assets/spock.png" alt="Cartoon Spock Icon">
+                </div>
+                <div class="gameupdates-text">
+                    <p> LIZARD <br> & <br> SPOCK </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rightscreen-section">
+            <div>
+                <img class="rightscreen-image" src="./assets/rockpaperscissorsicon.png"
+                    alt="Rock Paper Scissor Icons with Arrows">
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Gamemode Screen -->
+
+    <div id="gamemode-screen">
+
+        <section class="gamemode-header">
+            <div class="gamemode-text">
+                <h1> CHOOSE YOUR GAME MODE: </h1>
+            </div>
+        </section>
+
+        <section class="gamemode-btnsection">
+            <div class="gamemode-buttons">
+                <button class="gamemode-btn1"> ONE WIN </button>
+                <button class="gamemode-btn2"> THREE WINS </button>
+                <button class="gamemode-btn3"> FOUR WINS </button>
+            </div>
+        </section>
+
+    </div>
 
     <script src="./scripts/app.js"></script>
 </body>
+
 </html>

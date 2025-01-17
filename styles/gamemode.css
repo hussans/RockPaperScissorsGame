@@ -2,16 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Gamemode Screen --- --- --- */
+
+#gamemode-screen {
+    display: none;
+}
+
 /* Header Section --- */
 
 .gamemode-header {
     position: fixed;
-    top: 150px;
+    top: 175px;
     left: 0;
     right: 0;
 }
 
-.gamemode-maintext {
+.gamemode-text {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     letter-spacing: 0.03rem;
 
@@ -19,24 +25,83 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 /* Button Section --- */
 
-.gamemode-buttons {
+.gamemode-btnsection {
     position: fixed;
-    top: 250px;
+    top: 275px;
     left: 0;
     right: 0;
 }
 
-.buttons {
+.gamemode-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-
+    margin: 10px;
 }
+
+.gamemode-btn1,
+.gamemode-btn2,
+.gamemode-btn3 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.250);
+}
+
+.gamemode-btn1 {
+    background-color: #4681F4;
+    padding: 15px 65px;
+}
+
+.gamemode-btn1:hover {
+    background-color: white;
+    color: #4681F4;
+    transition: 0.2s;
+}
+
+.gamemode-btn1:active {
+    background-color: #4681F4;
+    color: white;
+}
+
+.gamemode-btn2 {
+    background-color: #DD7973;
+    padding: 15px 50px;
+}
+
+.gamemode-btn2:hover {
+    background-color: white;
+    color: #DD7973;
+    transition: 0.2s;
+}
+
+.gamemode-btn2:active {
+    background-color: #DD7973;
+    color: white;
+}
+
+.gamemode-btn3 {
+    background-color: #FFBD03;
+    padding: 15px 55px;
+}
+
+.gamemode-btn3:hover {
+    background-color: white;
+    color: #FFBD03;
+    transition: 0.2s;
+}
+
+.gamemode-btn3:active {
+    background-color: #FFBD03;
+    color: white;
+}
+
 
